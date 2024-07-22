@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #81cad6;
+}
+
+.panel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: #f9ec7e;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.p-bar {
+  /* make it flex/none */
+  display: flex;
+  padding: 0 20vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #dc3e26;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.box p {
+  font-size: 1vw;
+  color: #f9ec7e;
+}
+
+.box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9ec7e;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #dc3e26;
+}
+
+.p-bottom {
+  /* make it flex/none */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #dc3e26;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 0.9vw;
+  color: #f9ec7e;
+}
+
+.bubble:hover {
+  background-color: #bf2e18;
+}
+
+.p-after {
+  /* make it flex/none */
+  display: none;
+  flex-direction: column;
+  gap: 2.5vw;
+  align-items: center;
+  justify-content: center;
+  color: #bf2e18;
+  font-size: 1.6vw;
+}
+
+.final-score {
+  font-size: 2vw;
+  background-color: #dc3e26;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+  color: #f9ec7e;
+  margin: 0 0 1.5vw 0;
+}
+
+.p-after a {
+  text-decoration: none;
+  color: #bf2e18;
+  transition: 0.1s ease-in-out;
+}
+
+.p-after a:hover {
+  color: purple;
+}
+
+@media (max-width: 600px) {
+  .p-bar {
+    padding: 0 15px;
+    width: 100%;
+    height: 70px;
+  }
+  .box {
+    gap: 0.5vh;
+  }
+  .box p {
+    font-size: 1.1vh;
+  }
+  .box div {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 1.1vh;
+  }
+  .p-bottom {
+    gap: 5px;
+    padding: 5px;
+  }
+  .bubble {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8vh;
+  }
+  .p-after {
+    gap: 4vh;
+    font-size: 1.6vh;
+  }
+  .final-score {
+    font-size: 3vh;
+    background-color: #dc3e26;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    color: #f9ec7e;
+    margin: 0 0 1.5vw 0;
+  }
+
+  .p-after a {
+    text-decoration: none;
+    color: #bf2e18;
+    transition: 0.1s ease-in-out;
+  }
+}

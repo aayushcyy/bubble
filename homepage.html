@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puput-The bubble Game | Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <div class="p-bar">
+          <div class="box" id="box-1">
+            <p>Hit</p>
+            <div class="hit-val"></div>
+          </div>
+          <div class="box" id="box-2">
+            <p>Timer</p>
+            <div class="timer-val"></div>
+          </div>
+          <div class="box" id="box-3">
+            <p>Score</p>
+            <div class="score-val">0</div>
+          </div>
+        </div>
+        <div class="p-bottom"></div>
+        <audio id="sound" src="pop.mp3" preload="auto"></audio>
+        <div class="p-after">
+          <p>Your score is</p>
+          <p class="final-score"></p>
+          <p><a href="homepage.html">Play again</a></p>
+          <p><a href="author.html">Who built this shit</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="homepage.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

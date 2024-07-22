@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 1vw 2vw;
+  font-size: 0.8vw;
+  color: #bf2e18;
+}
+
+.panel {
+  display: flex;
+  gap: 4vw;
+}
+
+p a,
+a {
+  color: #bf2e18;
+  font-size: 2vw;
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+a:hover {
+  color: purple;
+}
+
+#player-name {
+  width: 35%;
+  font-family: "Press Start 2P", system-ui;
+  color: #bf2e18;
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid red;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: #81cad6;
+  transition: all 0.1s ease 0s;
+}
+
+p {
+  font-size: 1.5vw;
+  text-align: center;
+  color: #bf2e18;
+}
+
+.naam-bata {
+  display: none;
+  font-size: 1vw;
+}
+
+#start-btn {
+  margin-top: 1vw;
+}
+
+.sorry {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .logo {
+    margin: 2vw 2vw;
+    font-size: 2vw;
+  }
+  p a {
+    font-size: 1.5vh;
+    line-height: 7vh;
+  }
+  #panel-of-play {
+    justify-content: flex-start;
+    padding-top: 15vh;
+    gap: 4vh;
+  }
+  .underwear,
+  .before-we,
+  .sorry,
+  .naam-bata,
+  #start-btn {
+    font-size: 1.5vh;
+    line-height: 2vh;
+    padding: 0 2vw;
+  }
+  #player-name {
+    width: 80%;
+    height: 1.7vh;
+    font-size: 1vh;
+  }
+  .naam-bata {
+    font-size: 1vh;
+  }
+}

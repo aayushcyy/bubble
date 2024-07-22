@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #81cad6;
+}
+
+.panel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: #f9ec7e;
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 2vw;
+  padding: 2vw 4vw;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 1vw 2vw;
+  font-size: 0.8vw;
+  color: #bf2e18;
+}
+
+#how {
+  color: #bf2e18;
+  font-size: 1.7vw;
+}
+
+p {
+  font-size: 1.2vw;
+  line-height: 3.3vw;
+}
+
+.start {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-top: 3vw;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.start a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+  .panel {
+    justify-content: flex-start;
+    padding: 12vh 4vw;
+    gap: 2vh;
+  }
+  .logo {
+    margin: 1vh;
+    font-size: 1vh;
+  }
+  #how {
+    font-size: 1.7vh;
+  }
+  p {
+    padding: 1vh 0;
+    font-size: 1.1vh;
+    line-height: 2.3vh;
+  }
+  .start {
+    height: 40px;
+    margin-top: 3vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .start a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vh;
+  }
+  .start a i {
+    font-size: 3vh;
+  }
+}

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Press Start 2P", system-ui;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #81cad6;
+}
+
+.panel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: #f9ec7e;
+  border-radius: 15px;
+  overflow: hidden;
+  gap: 2vw;
+  padding: 2vw 4vw;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 1vw 2vw;
+  font-size: 0.8vw;
+  color: #bf2e18;
+}
+
+p {
+  color: #bf2e18;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  width: 94%;
+}
+
+.name {
+  font-size: 2vw;
+}
+
+.socials {
+  display: flex;
+  font-size: 2vw;
+  gap: 2vw;
+}
+
+.socials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 1vw;
+  background-color: #f9ec7e;
+}
+
+.socials a {
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.ig {
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5vw;
+}
+
+.twitter a {
+  color: black;
+}
+
+.linkedin a {
+  color: #0077b5;
+  font-size: 2.5vw;
+}
+
+.ig a:hover,
+.linkedin a:hover {
+  font-size: 2.7vw;
+}
+.twitter a:hover {
+  font-size: 2.3vw;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    margin: 1vh;
+    font-size: 2vw;
+  }
+  .panel {
+    justify-content: flex-start;
+    padding-top: 10vh;
+  }
+  p {
+    font-size: 1.3vh;
+    line-height: 1.6vh;
+    width: 94%;
+  }
+  .name {
+    font-size: 2.2vh;
+    line-height: 2.9vh;
+    padding: 1vh 0;
+  }
+  .socials {
+    margin-top: 2vh;
+    font-size: 2vh;
+    gap: 3vw;
+    padding: 0;
+  }
+  .socials div {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #f9ec7e;
+  }
+  .ig {
+    font-size: 2.8vh;
+  }
+  .linkedin a {
+    font-size: 2.8vh;
+  }
+}
